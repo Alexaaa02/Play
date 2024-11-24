@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лаб 6: Класс hangman.Hangman</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лаб 6<span id="projectnumber">&#160;1</span>
+   </div>
+   <div id="projectbrief">Игра &quot;Виселица&quot;</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacehangman.html">hangman</a></li><li class="navelem"><a class="el" href="classhangman_1_1Hangman.html">Hangman</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="classhangman_1_1Hangman-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс hangman.Hangman</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a289d9e27a2d6b73366815dc731add251" id="r_a289d9e27a2d6b73366815dc731add251"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a289d9e27a2d6b73366815dc731add251">init</a> (self)</td></tr>
+<tr class="separator:a289d9e27a2d6b73366815dc731add251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bcb8430187f88740851280734a9dce6" id="r_a0bcb8430187f88740851280734a9dce6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bcb8430187f88740851280734a9dce6">read_event</a> (self)</td></tr>
+<tr class="separator:a0bcb8430187f88740851280734a9dce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a67c82430a2dcd2e92161e17d197d60e1" id="r_a67c82430a2dcd2e92161e17d197d60e1"><td class="memItemLeft" align="right" valign="top"><a id="a67c82430a2dcd2e92161e17d197d60e1" name="a67c82430a2dcd2e92161e17d197d60e1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>quit</b> = False</td></tr>
+<tr class="separator:a67c82430a2dcd2e92161e17d197d60e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed7a556b65dcce10d816353c98e871b" id="r_aaed7a556b65dcce10d816353c98e871b"><td class="memItemLeft" align="right" valign="top"><a id="aaed7a556b65dcce10d816353c98e871b" name="aaed7a556b65dcce10d816353c98e871b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_target_word</b> = 1</td></tr>
+<tr class="separator:aaed7a556b65dcce10d816353c98e871b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1887a668f11478f22d41366794b532c" id="r_ad1887a668f11478f22d41366794b532c"><td class="memItemLeft" align="right" valign="top"><a id="ad1887a668f11478f22d41366794b532c" name="ad1887a668f11478f22d41366794b532c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_guessed_word</b> = True)</td></tr>
+<tr class="separator:ad1887a668f11478f22d41366794b532c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a050c9d92303b234a80189fd30f4d7189" id="r_a050c9d92303b234a80189fd30f4d7189"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a050c9d92303b234a80189fd30f4d7189">_build_canvas_frame</a> (self)</td></tr>
+<tr class="separator:a050c9d92303b234a80189fd30f4d7189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbfe14e099e51ef059e34f5d7d07dd7f" id="r_acbfe14e099e51ef059e34f5d7d07dd7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbfe14e099e51ef059e34f5d7d07dd7f">_build_letters_frame</a> (self)</td></tr>
+<tr class="separator:acbfe14e099e51ef059e34f5d7d07dd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad741c9298f06907b3c1e5ce8d405c78" id="r_aad741c9298f06907b3c1e5ce8d405c78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad741c9298f06907b3c1e5ce8d405c78">_build_guessed_word_frame</a> (self)</td></tr>
+<tr class="separator:aad741c9298f06907b3c1e5ce8d405c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe640eadb14cf53e809a38fc61aee2e1" id="r_afe640eadb14cf53e809a38fc61aee2e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe640eadb14cf53e809a38fc61aee2e1">_build_action_buttons_frame</a> (self)</td></tr>
+<tr class="separator:afe640eadb14cf53e809a38fc61aee2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee5253f8ff2bd08bb47e4098acc9055" id="r_aeee5253f8ff2bd08bb47e4098acc9055"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeee5253f8ff2bd08bb47e4098acc9055">_draw_scaffold</a> (self)</td></tr>
+<tr class="separator:aeee5253f8ff2bd08bb47e4098acc9055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3115901da22a2dec67e482907e690fc" id="r_ab3115901da22a2dec67e482907e690fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3115901da22a2dec67e482907e690fc">_draw_hanged_man</a> (self)</td></tr>
+<tr class="separator:ab3115901da22a2dec67e482907e690fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6566c8f64bf8d18dff6ceca2740ac77d" id="r_a6566c8f64bf8d18dff6ceca2740ac77d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6566c8f64bf8d18dff6ceca2740ac77d">_select_word</a> (self)</td></tr>
+<tr class="separator:a6566c8f64bf8d18dff6ceca2740ac77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93a66f6bd8e482db6bed543509d9b3b1" id="r_a93a66f6bd8e482db6bed543509d9b3b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93a66f6bd8e482db6bed543509d9b3b1">_build_guessed_word</a> (self)</td></tr>
+<tr class="separator:a93a66f6bd8e482db6bed543509d9b3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3fbf6aaf2489bde683b7bb89dbcec6" id="r_aea3fbf6aaf2489bde683b7bb89dbcec6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea3fbf6aaf2489bde683b7bb89dbcec6">_new_game</a> (self)</td></tr>
+<tr class="separator:aea3fbf6aaf2489bde683b7bb89dbcec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65e204baf83637a199e59ec5e16bfe62" id="r_a65e204baf83637a199e59ec5e16bfe62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65e204baf83637a199e59ec5e16bfe62">_restart_game</a> (self)</td></tr>
+<tr class="separator:a65e204baf83637a199e59ec5e16bfe62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8083a6efab9ab32d7a309f7e815b31f3" id="r_a8083a6efab9ab32d7a309f7e815b31f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8083a6efab9ab32d7a309f7e815b31f3">_play</a> (self, letter)</td></tr>
+<tr class="separator:a8083a6efab9ab32d7a309f7e815b31f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a8b2afed94a276d54946bd586ad7c7fdd" id="r_a8b2afed94a276d54946bd586ad7c7fdd"><td class="memItemLeft" align="right" valign="top"><a id="a8b2afed94a276d54946bd586ad7c7fdd" name="a8b2afed94a276d54946bd586ad7c7fdd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>_window</b> = sg.Window(title=&quot;Hangman&quot;, layout=layout, finalize=True)</td></tr>
+<tr class="separator:a8b2afed94a276d54946bd586ad7c7fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259c4dfcc27f587c8b397f45a6f98e43" id="r_a259c4dfcc27f587c8b397f45a6f98e43"><td class="memItemLeft" align="right" valign="top"><a id="a259c4dfcc27f587c8b397f45a6f98e43" name="a259c4dfcc27f587c8b397f45a6f98e43"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>_canvas</b> = self._window[&quot;-CANVAS-&quot;]</td></tr>
+<tr class="separator:a259c4dfcc27f587c8b397f45a6f98e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e569985070371a35b21a5188a2716e9" id="r_a9e569985070371a35b21a5188a2716e9"><td class="memItemLeft" align="right" valign="top"><a id="a9e569985070371a35b21a5188a2716e9" name="a9e569985070371a35b21a5188a2716e9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_played_games</b> = 0</td></tr>
+<tr class="separator:a9e569985070371a35b21a5188a2716e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef25154de6c178fbf71998ff8657f75" id="r_a9ef25154de6c178fbf71998ff8657f75"><td class="memItemLeft" align="right" valign="top"><a id="a9ef25154de6c178fbf71998ff8657f75" name="a9ef25154de6c178fbf71998ff8657f75"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_won_games</b> = 0</td></tr>
+<tr class="separator:a9ef25154de6c178fbf71998ff8657f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8867f4bce082a62c428cea522cae2a" id="r_a9e8867f4bce082a62c428cea522cae2a"><td class="memItemLeft" align="right" valign="top"><a id="a9e8867f4bce082a62c428cea522cae2a" name="a9e8867f4bce082a62c428cea522cae2a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_wrong_guesses</b> = 1:</td></tr>
+<tr class="separator:a9e8867f4bce082a62c428cea522cae2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9685c9545460bc817197afa7526b96b5" id="r_a9685c9545460bc817197afa7526b96b5"><td class="memItemLeft" align="right" valign="top"><a id="a9685c9545460bc817197afa7526b96b5" name="a9685c9545460bc817197afa7526b96b5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>_target_word</b></td></tr>
+<tr class="separator:a9685c9545460bc817197afa7526b96b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c3de42e42b70485a0415d5c075cbee" id="r_a46c3de42e42b70485a0415d5c075cbee"><td class="memItemLeft" align="right" valign="top"><a id="a46c3de42e42b70485a0415d5c075cbee" name="a46c3de42e42b70485a0415d5c075cbee"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>_guessed_letters</b></td></tr>
+<tr class="separator:a46c3de42e42b70485a0415d5c075cbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af18692458fe6e841ac4b8741d18b1fda" id="r_af18692458fe6e841ac4b8741d18b1fda"><td class="memItemLeft" align="right" valign="top"><a id="af18692458fe6e841ac4b8741d18b1fda" name="af18692458fe6e841ac4b8741d18b1fda"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>_guessed_word</b> = self._build_guessed_word()</td></tr>
+<tr class="separator:af18692458fe6e841ac4b8741d18b1fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><pre class="fragment">@brief Основной класс игры "Виселица".
+Реализует логику игры, управление графическим интерфейсом и обработку событий.
+</pre> </div><h2 class="groupheader">Методы</h2>
+<a id="afe640eadb14cf53e809a38fc61aee2e1" name="afe640eadb14cf53e809a38fc61aee2e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe640eadb14cf53e809a38fc61aee2e1">&#9670;&#160;</a></span>_build_action_buttons_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._build_action_buttons_frame </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Создаёт кнопки для управления игрой ("New", "Restart", "Quit").
+@return Объект Frame.
+</pre> 
+</div>
+</div>
+<a id="a050c9d92303b234a80189fd30f4d7189" name="a050c9d92303b234a80189fd30f4d7189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050c9d92303b234a80189fd30f4d7189">&#9670;&#160;</a></span>_build_canvas_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._build_canvas_frame </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Создаёт фрейм с графическим элементом для отображения виселицы.
+@return Объект Frame.
+</pre> 
+</div>
+</div>
+<a id="a93a66f6bd8e482db6bed543509d9b3b1" name="a93a66f6bd8e482db6bed543509d9b3b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a66f6bd8e482db6bed543509d9b3b1">&#9670;&#160;</a></span>_build_guessed_word()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._build_guessed_word </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Генерирует строку с угаданными буквами слова.
+@return Строка с текущим состоянием угадываемого слова.
+</pre> 
+</div>
+</div>
+<a id="aad741c9298f06907b3c1e5ce8d405c78" name="aad741c9298f06907b3c1e5ce8d405c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad741c9298f06907b3c1e5ce8d405c78">&#9670;&#160;</a></span>_build_guessed_word_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._build_guessed_word_frame </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Создаёт фрейм для отображения текущего состояния угадываемого слова.
+@return Объект Frame.
+</pre> 
+</div>
+</div>
+<a id="acbfe14e099e51ef059e34f5d7d07dd7f" name="acbfe14e099e51ef059e34f5d7d07dd7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbfe14e099e51ef059e34f5d7d07dd7f">&#9670;&#160;</a></span>_build_letters_frame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._build_letters_frame </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Создаёт кнопки для выбора букв.
+Кнопки разделены на группы по 4 буквы.
+@return Объект Column с кнопками.
+</pre> 
+</div>
+</div>
+<a id="ab3115901da22a2dec67e482907e690fc" name="ab3115901da22a2dec67e482907e690fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3115901da22a2dec67e482907e690fc">&#9670;&#160;</a></span>_draw_hanged_man()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._draw_hanged_man </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Рисует части тела висельника в зависимости от количества неверных попыток.
+</pre> 
+</div>
+</div>
+<a id="aeee5253f8ff2bd08bb47e4098acc9055" name="aeee5253f8ff2bd08bb47e4098acc9055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeee5253f8ff2bd08bb47e4098acc9055">&#9670;&#160;</a></span>_draw_scaffold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._draw_scaffold </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Рисует основу виселицы на графическом элементе.
+</pre> 
+</div>
+</div>
+<a id="aea3fbf6aaf2489bde683b7bb89dbcec6" name="aea3fbf6aaf2489bde683b7bb89dbcec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea3fbf6aaf2489bde683b7bb89dbcec6">&#9670;&#160;</a></span>_new_game()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._new_game </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Начинает новую игру с выбором нового слова.
+</pre> 
+</div>
+</div>
+<a id="a8083a6efab9ab32d7a309f7e815b31f3" name="a8083a6efab9ab32d7a309f7e815b31f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8083a6efab9ab32d7a309f7e815b31f3">&#9670;&#160;</a></span>_play()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._play </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>letter</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Обрабатывает выбор буквы игроком.
+@param letter Буква, которую выбрал игрок.
+</pre> 
+</div>
+</div>
+<a id="a65e204baf83637a199e59ec5e16bfe62" name="a65e204baf83637a199e59ec5e16bfe62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65e204baf83637a199e59ec5e16bfe62">&#9670;&#160;</a></span>_restart_game()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._restart_game </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Сбрасывает текущую игру (перезапуск).
+</pre> 
+</div>
+</div>
+<a id="a6566c8f64bf8d18dff6ceca2740ac77d" name="a6566c8f64bf8d18dff6ceca2740ac77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6566c8f64bf8d18dff6ceca2740ac77d">&#9670;&#160;</a></span>_select_word()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman._select_word </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Выбирает случайное слово из файла "words.txt".
+@return Слово для угадывания.
+</pre> 
+</div>
+</div>
+<a id="a289d9e27a2d6b73366815dc731add251" name="a289d9e27a2d6b73366815dc731add251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a289d9e27a2d6b73366815dc731add251">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman.init </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Конструктор класса Hangman.
+Инициализирует интерфейс игры и основные переменные.
+</pre> 
+</div>
+</div>
+<a id="a0bcb8430187f88740851280734a9dce6" name="a0bcb8430187f88740851280734a9dce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bcb8430187f88740851280734a9dce6">&#9670;&#160;</a></span>read_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hangman.Hangman.read_event </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Считывает событие из окна.
+@return Идентификатор события.
+</pre> 
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Рабочий стол/<b>hangman.py</b></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
